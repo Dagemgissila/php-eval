@@ -1,0 +1,1 @@
+{"version":1,"defects":{"UtilsTest::testGeneratedNumberIsInteger":3},"times":{"UtilsTest::testGeneratedNumberIsWithinRange":0.004,"UtilsTest::testGeneratedNumberIsInteger":0,"UtilsTest::testGeneratedNumberIsRandom":0.001,"UtilsTest::testGetSecureRandomPerformance":0.025}}
