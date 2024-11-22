@@ -1,19 +1,32 @@
 # PHP Evaluation
 
-## You must create a branch on this repository to push your work.
+## Task 1: Testing `getSecureRandom` Function
 
-### Task 1
+### Run Tests
 
-* Write testing functions to check the function `getSecureRandom` in `utils.php` really returns strong and accpetable random numbers
+1. Install PHPUnit (if not installed):
 
-  * Try at least to write 3 testing cases
-  * Structure/write the testing function in any way you think is best and fast
+   ```bash
+   composer require --dev phpunit/phpunit ^9
+   ```
 
-### Task 2
+2. Run the tests:
 
-* Create `getSecureRandom` API that is served on some server
-* The API must use `getSecureRandom` in `utils.php` to get the response
-* Structure/write the API in any way you think is best and fast
+   ```bash
+   phpunit tests/UtilsTest.php
 
-### Note
-* You have to compromise implementation quality for task speed. Simple working approaches that are implemented fast is more preferred than best implementation that is written slow.
+   ```
+
+## Task 2: `getSecureRandom` API
+
+1.Run the built-in PHP server
+
+```bash
+php -S localhost:8000
+
+```
+
+Send Requests to the API
+Browser: Visit http://localhost:8000/index.php?min=1&max=100
+
+Postman: Send a GET request to http://localhost:8000/index.php?min=1&max=100
